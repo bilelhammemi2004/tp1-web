@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatter</title>
+    <style>
+        #editableDiv {
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: lightgray;
+            border: 10px solid burlywood;            
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center text-danger text-bg-primary">Text Formatter</h1>
+
+    
+    <label for="fontSelect" class="text-bg-warning">Choose Font: </label>
+    <select id="fontSelect">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <br><br>
+
+    <label for="fontColor" class="text-bg-success">Choose Font Color: </label>
+    <input type="color" id="fontColor" value="#000000">
+
+    <br><br>
+
+    <label for="fontSize" class="text-bg-secondary">Choose Font Size: </label>
+    <input type="number" class="text-bg-danger" id="fontSize" value="18" min="8" max="100">
+
+    <br><br>
+
+   
+    <div id="editableDiv" contenteditable="true"></div>
+
+    <script src="1302.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
